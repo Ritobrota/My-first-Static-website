@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<marquee scrollamount="20" bgcolor="yellow"><h1>Fill up</h1></marquee>
+	<form>
+		<h1>PAYMENT INFO</h1>
+		<h2>Contact info</h2>
+		<hr>
+		<p>FIRST NAME: <input type="text" name="First name" required=""></p>
+		<p>LAST NAME: <input type="text" name="Last name" required=""></p>
+		<fieldset>
+			<legend>GENDER</legend>
+			<p>
+				Male: <input required="" type="radio" name="Gender">
+				female: <input type="radio" required="" name="Gender">
+				Other: <input type="radio" required="" name="Gender">
+			</p>
+		</fieldset>
+		<p>Address: <textarea name="address" id="address" rows="5" cols="20"></textarea></p>
+		<p>Email: <input required="" type="email" name="email" required="" id="email"></p>
+		<p>Pincode: <input required="" type="pincode" required="" name=""></p>
+		<hr>
+		<h1>Payment Information</h1>
+		<p>Card Type:
+			<select name="Card Type" id="Card Type">
+				<option value="">--Select a card type--</option>
+				<option value="mastercard">mastercard</option>
+				<option value="visa">visa</option>
+				<option value="rupay">rupay</option>
+			</select>
+		</p>
+		<p>Card Number: <input required="" type="number" name="card number" id="card number"></p>
+		<p>Expiration date <input required="" type="date" name="card exp" id="card exp"></p>
+		<p>CVV: <input required="" type="password" name="cvv" id="cvv"></p>
+		<input class="speacial" type="submit" value="submit">&nbsp; &nbsp; |&nbsp; &nbsp;
+		<input class="speacial" type="reset" value="reset">
+	</form>
+</body>
+</html>
